@@ -1,0 +1,41 @@
+# Configuração padrão do Go Air
+
+# Caminho do diretório raiz do projeto
+root = "."
+
+# Comando a ser executado (por padrão, ele detecta main.go automaticamente)
+cmd = "go run main.go"
+
+# Pasta de trabalho onde o comando será executado
+# Normalmente é o mesmo que o root
+work_dir = "."
+
+# Arquivo binário gerado (caso prefira buildar antes)
+# bin = "tmp/main"
+
+# Delay entre o rebuild e o restart (em milissegundos)
+delay = 1000
+
+# Lista de extensões que devem ser observadas
+include_ext = ["go", "tpl", "tmpl", "html"]
+
+# Diretórios ou arquivos que devem ser ignorados
+exclude_dir = ["vendor", "tmp", "bin", "node_modules"]
+
+# Arquivos temporários comuns de IDEs que serão ignorados
+exclude_file = ["*.tmp", "*.swp", "*.swo", "*.DS_Store"]
+
+# Watchando subdiretórios recursivamente
+recursive = true
+
+# Quando true, limpa o terminal entre os reloads
+clean_on_restart = true
+
+# Habilitar o log de debug
+log = "debug"
+
+# Enviar SIGTERM para processos anteriores (ao invés de matar direto)
+send_interrupt = true
+
+# Habilitar impressão de tempo de execução
+color = true
